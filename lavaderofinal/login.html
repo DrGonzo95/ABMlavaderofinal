@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <!-- Agrega enlaces a las bibliotecas de Bootstrap CSS y JS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Agrega un estilo personalizado -->
+    <style>
+        body {
+            background: url('fondo2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            height: 100vh;
+            color: white;
+            /* Cambia el color del texto si es necesario para que sea legible en la imagen de fondo */
+        }
+        
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Agrega un fondo semitransparente para que el formulario sea legible */
+            padding: 20px;
+            border-radius: 10px;
+            /* Agrega esquinas redondeadas al formulario si lo deseas */
+        }
+        
+        h1 {
+            color: rgb(0, 0, 0);
+            /* Cambia el color del encabezado si es necesario para que sea legible en la imagen de fondo */
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <h1>Iniciar Sesión</h1>
+    <div class="container login-form">
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <input type="text" name="username" class="form-control" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+        </form>
+    </div>
+</body>
+
+</html>
